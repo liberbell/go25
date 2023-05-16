@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var myName string
+
 func main() {
 	fmt.Println("Hello, world.")
 
@@ -18,6 +20,6 @@ func main() {
 	fmt.Println(whatWasSaid)
 }
 
-func saySomething() string {
-	return "something"
+func saySomething() (string, string) {
+	return "something", "else"
 }
