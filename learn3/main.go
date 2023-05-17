@@ -15,7 +15,7 @@ func main() {
 	log.Println("s2 is", s2)
 }
 
-func saySomething(s string) (string, string) {
+func saySomething(s3 string) (string, string) {
 	log.Println("s from the saysomething func is", s)
-	return s, "world"
+	return s3, "world"
 }
