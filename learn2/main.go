@@ -9,6 +9,7 @@ func main() {
 	log.Println("mystring is set to ", myString)
 
 	changeUsingPointer(&myString)
+	log.Println("mystring is set to ", myString)
 }
 
 func changeUsingPointer(s *string) {
