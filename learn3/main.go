@@ -9,7 +9,7 @@ func main() {
 	log.Println("s  is", s)
 	log.Println("s2 is", s2)
 
-	saySomething(s)
+	saySomething("xxx")
 
 	log.Println("after call func s is", s)
 	log.Println("s2 is", s2)
