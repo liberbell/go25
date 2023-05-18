@@ -18,5 +18,5 @@ func main() {
 		LastName:  "Mary",
 	}
 
-	log.Println(user.FirstName, user.LastName)
+	log.Println(user.FirstName, user.LastName, "BirthDate:", user.BirthDate)
 }
