@@ -1,15 +1,15 @@
 package main
 
-import "log"
-
 func main() {
-	var myString string
-	var myInt int
+	// var myString string
+	// var myInt int
 
-	myString = "hi"
-	myInt = 11
+	// myString = "hi"
+	// myInt = 11
 
-	mySecondString := "another string"
+	// mySecondString := "another string"
 
-	log.Println(myString, myInt, mySecondString)
+	// log.Println(myString, myInt, mySecondString)
+
+	myMap := make(map[string]string)
 }
