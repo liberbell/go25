@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"time"
 )
 
@@ -16,4 +17,6 @@ func main() {
 		FirstName: "Bob",
 		LastName:  "Mary",
 	}
+
+	log.Println(user.FirstName, user.LastName)
 }
