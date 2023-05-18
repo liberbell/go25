@@ -1,8 +1,15 @@
 package main
 
-import "log"
+import (
+	"log"
+	"time"
+)
 
 var s = "seven"
+var firstName string
+var lastName string
+var age int
+var birthDate time.Time
 
 func main() {
 	var s2 = "six"
