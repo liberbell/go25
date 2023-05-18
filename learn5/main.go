@@ -6,8 +6,8 @@ type myStruct struct {
 	Firstname string
 }
 
-func (m *printFirstName) string {
-	
+func (m *myStruct) printFirstName() string {
+
 }
 
 func main() {
