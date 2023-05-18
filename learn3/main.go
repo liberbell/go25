@@ -11,6 +11,13 @@ var lastName string
 var age int
 var birthDate time.Time
 
+type user struct {
+	FirstName string
+	LastName  string
+	Age       int
+	BirthDate time.Time
+}
+
 func main() {
 	var s2 = "six"
 
