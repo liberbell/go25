@@ -25,5 +25,5 @@ func main() {
 	myMap["First"] = 1
 	myMap["Second"] = 2
 
-	log.Panicln(myMap["First"], myMap["Second"])
+	log.Println(myMap["First"], myMap["Second"])
 }
