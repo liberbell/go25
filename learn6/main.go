@@ -18,7 +18,7 @@ func main() {
 
 	// log.Println(myString, myInt, mySecondString)
 
-	myMap := make(map[string]int)
+	// myMap := make(map[string]int)
 
 	// myMap["dog"] = "Eric"
 	// myMap["other-dog"] = "Bob"
@@ -27,8 +27,18 @@ func main() {
 	// log.Println(myMap["dog"])
 	// log.Println(myMap["other-dog"])
 
-	myMap["First"] = 1
-	myMap["Second"] = 2
+	// myMap["First"] = 1
+	// myMap["Second"] = 2
 
-	log.Println(myMap["First"], myMap["Second"])
+	// log.Println(myMap["First"], myMap["Second"])
+
+	myMap := make(map[string]User)
+
+	me := User{
+		FirstName: "Bob",
+		LastName:  "Mary",
+	}
+
+	myMap["me"] = me
+	log.Println(myMap["me"])
 }
