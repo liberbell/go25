@@ -17,6 +17,7 @@ func main() {
 
 	myMap["dog"] = "Eric"
 	myMap["other-dog"] = "Bob"
+	myMap["dog"] = "Alex"
 
 	log.Println(myMap["dog"])
 	log.Println(myMap["other-dog"])
