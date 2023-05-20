@@ -1,5 +1,7 @@
 package main
 
+import "log"
+
 func main() {
 	// var myString string
 	// var myInt int
@@ -22,4 +24,6 @@ func main() {
 
 	myMap["First"] = 1
 	myMap["Second"] = 2
+
+	log.Panicln(myMap["First"], myMap["Second"])
 }
