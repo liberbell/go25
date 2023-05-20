@@ -2,6 +2,11 @@ package main
 
 import "log"
 
+type User struct {
+	FirstName string
+	LastName  string
+}
+
 func main() {
 	// var myString string
 	// var myInt int
