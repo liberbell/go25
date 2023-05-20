@@ -3,8 +3,8 @@ package main
 import "log"
 
 func main() {
-	var myString string
-	myString = "Fish"
+	var mySlice string
+	mySlice = append(mySlice, "Eric")
 
-	log.Println(myString)
+	log.Println(mySlice)
 }
