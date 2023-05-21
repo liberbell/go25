@@ -1,5 +1,9 @@
 package main
 
+import (
+	"log"
+)
+
 func main() {
 	// var isTrue bool
 	// isTrue = false
@@ -30,4 +34,11 @@ func main() {
 	// } else if myNum > 1000 && isTrue {
 	// 	log.Println("3")
 	// }
+	myVar := "cat"
+
+	switch myVar {
+	case "cat":
+		log.Println("cat is set to cat")
+
+	}
 }
