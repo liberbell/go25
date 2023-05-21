@@ -34,11 +34,12 @@ func main() {
 	// } else if myNum > 1000 && isTrue {
 	// 	log.Println("3")
 	// }
-	myVar := "cat"
+	myVar := "dog"
 
 	switch myVar {
 	case "cat":
 		log.Println("cat is set to cat")
-
+	case "dog":
+		log.Println("cat is set to dog")
 	}
 }
