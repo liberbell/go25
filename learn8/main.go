@@ -25,10 +25,26 @@ func main() {
 	}
 
 	PrintInfo(dog)
+
+	gorilla := Gorilla{
+		Name:          "Bob",
+		Color:         "Brown",
+		NumberOFTeeth: 38,
+	}
+
+	PrintInfo(gorilla)
 }
 
 func PrintInfo(a Animal) {
 	fmt.Println("This animal syas", a.Says(), " and has", a.NumberOfLegs(), "legs.")
+}
+
+func (d Dog) Says() string {
+	return "woof"
+}
+
+func (d Dog) NumberOfLegs() int {
+	return 4
 }
 
 func (d Dog) Says() string {
