@@ -47,10 +47,10 @@ func (d Dog) NumberOfLegs() int {
 	return 4
 }
 
-func (d Dog) Says() string {
-	return "woof"
+func (d Gorilla)  string {
+	return "ugh"
 }
 
-func (d Dog) NumberOfLegs() int {
-	return 4
+func (d Gorilla) NumberOfLegs() int {
+	return 2
 }
