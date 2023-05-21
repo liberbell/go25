@@ -17,5 +17,8 @@ type Gorilla struct {
 }
 
 func main() {
-
+	dog := Dog{
+		Name:  "Eric",
+		Breed: "German Shepherds",
+	}
 }
