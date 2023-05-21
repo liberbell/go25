@@ -23,6 +23,8 @@ func main() {
 		Name:  "Eric",
 		Breed: "German Shepherds",
 	}
+
+	PrintInfo(dog)
 }
 
 func PrintInfo(a Animal) {
