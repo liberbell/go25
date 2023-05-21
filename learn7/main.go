@@ -1,7 +1,5 @@
 package main
 
-import "log"
-
 func main() {
 	// var isTrue bool
 	// isTrue = false
@@ -20,16 +18,16 @@ func main() {
 	// 	log.Println("Cat is not cat")
 	// }
 
-	myNum := 100
-	isTrue := false
+	// myNum := 100
+	// isTrue := false
 
-	if myNum > 99 && !isTrue {
-		log.Println("Mynum is greater than 99 and istrue is set to true")
-	} else if myNum < 100 && isTrue {
-		log.Println("1")
-	} else if myNum == 100 || isTrue {
-		log.Println("2")
-	} else if myNum > 1000 && isTrue {
-		log.Println("3")
-	}
+	// if myNum > 99 && !isTrue {
+	// 	log.Println("Mynum is greater than 99 and istrue is set to true")
+	// } else if myNum < 100 && isTrue {
+	// 	log.Println("1")
+	// } else if myNum == 100 || isTrue {
+	// 	log.Println("2")
+	// } else if myNum > 1000 && isTrue {
+	// 	log.Println("3")
+	// }
 }
