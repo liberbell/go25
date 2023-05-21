@@ -33,5 +33,8 @@ func PrintInfo(a Animal) {
 
 func (d Dog) Says() string {
 	return "woof"
+}
 
+func (d Dog) NumberOfLegs() int {
+	return 4
 }
