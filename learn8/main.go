@@ -52,5 +52,5 @@ func (d Gorilla) Says() string {
 }
 
 func (d Gorilla) NumberOfLegs() int {
-	return 2&
+	return 2
 }
