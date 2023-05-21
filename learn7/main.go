@@ -34,7 +34,7 @@ func main() {
 	// } else if myNum > 1000 && isTrue {
 	// 	log.Println("3")
 	// }
-	myVar := "fish"
+	myVar := "horse"
 
 	switch myVar {
 	case "cat":
