@@ -1,6 +1,10 @@
 package main
 
-import "github.com/helpers"
+import (
+	"log"
+
+	"github.com/helpers"
+)
 
 const numPool = 10
 
@@ -17,4 +21,10 @@ func main() {
 	// myVar.TypeName = "some name"
 	// log.Println(myVar.TypeName)
 	intChan := make(chan int, 0)
+	defer close(intChan)
+
+	go CalculateValue(intChan)
+
+	num := <-intChan
+	log.Println(num)
 }
