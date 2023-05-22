@@ -2,14 +2,17 @@ package main
 
 import (
 	"log"
-
-	"github.com/liber/myniceprogram/helpers"
 )
 
 func main() {
-	log.Println("Hello")
+	// log.Println("Hello")
 
-	var myVar helpers.SomeType
-	myVar.TypeName = "some name"
-	log.Println(myVar.TypeName)
+	// var myVar helpers.SomeType
+	// myVar.TypeName = "some name"
+	// log.Println(myVar.TypeName)
+
+}
+
+func PrintText(s string) {
+	log.Println(s)
 }
