@@ -6,6 +6,7 @@ const numPool = 10
 
 func CalculateValue(intChan chan int) {
 	randomNumber := helpers.RandomNumber(numPool)
+	intChan <- randomNumber
 
 }
 
