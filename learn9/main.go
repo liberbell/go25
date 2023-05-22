@@ -1,6 +1,11 @@
 package main
 
+import "github.com/helpers"
+
+const numPool = 10
+
 func CalculateValue(intChan chan int) {
+	randomNumber := helpers.RandomNumber(numPool)
 
 }
 
