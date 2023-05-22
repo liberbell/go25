@@ -10,6 +10,7 @@ func main() {
 	// var myVar helpers.SomeType
 	// myVar.TypeName = "some name"
 	// log.Println(myVar.TypeName)
+	PrintText("Hi")
 
 }
 
