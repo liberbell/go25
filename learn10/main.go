@@ -36,4 +36,21 @@ func main() {
 		log.Println("Error unmarshalled json", err)
 	}
 	log.Printf("unmarshaled: %v", unmarshalled)
+
+	var mySlice []Person
+	var m1 Person
+	m1.FirstName = "Alex"
+	m1.LastName = "Hepp"
+	m1.HairColor = "black"
+	m1.HasDog = true
+
+	mySlice = append(mySlice, m1)
+
+	var m2 Person
+	m1.FirstName = "Eric"
+	m1.LastName = "Crapton"
+	m1.HairColor = "gray"
+	m1.HasDog = false
+
+	mySlice = append(mySlice, m2)
 }
