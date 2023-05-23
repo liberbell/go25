@@ -29,11 +29,11 @@ func main() {
 	}
 ]`
 
-	var unmarshaled []Person
+	var unmarshalled []Person
 
-	err := json.Unmarshal([]byte(myJson), &unmarshaled)
+	err := json.Unmarshal([]byte(myJson), &unmarshalled)
 	if err != nil {
 		log.Println("Error unmarshalled json", err)
 	}
-	log.Printf("unmarshaled: %v", unmarshaled)
+	log.Printf("unmarshaled: %v", unmarshalled)
 }
