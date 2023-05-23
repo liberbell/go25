@@ -24,4 +24,6 @@ func main()  {
 			"has_dog": true,
 		}
 	]`
+
+	var unmarshaled []Person
 }
