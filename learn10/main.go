@@ -36,7 +36,7 @@ func main() {
 	if err != nil {
 		log.Println("Error unmarshalled json", err)
 	}
-	log.Printf("unmarshaled: %v", unmarshalled)
+	log.Printf("unmarshalled: %v", unmarshalled)
 
 	var mySlice []Person
 	var m1 Person
