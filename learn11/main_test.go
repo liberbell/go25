@@ -20,20 +20,27 @@ func TestDivision(t *testing.T) {
 			if err == nil {
 				t.Error("expected an error but did not get one")
 			}
+		} else {
+			if err != nil {
+				t.Error("did not expect an error but gone one", err.Error())
+			}
+		}
+		if got != tt.expected {
+			t.Errorf("expected %f but got %f", tt.expected, got)
 		}
 	}
 }
 
-func TestDivide(t *testing.T) {
-	_, err := divide(10.0, 1.0)
-	if err != nil {
-		t.Error("Got an error when we should not have")
-	}
-}
+// func TestDivide(t *testing.T) {
+// 	_, err := divide(10.0, 1.0)
+// 	if err != nil {
+// 		t.Error("Got an error when we should not have")
+// 	}
+// }
 
-func TestBadDivide(t *testing.T) {
-	_, err := divide(10.0, 0)
-	if err == nil {
-		t.Error("Dig not get an error when we should not have")
-	}
-}
+// func TestBadDivide(t *testing.T) {
+// 	_, err := divide(10.0, 0)
+// 	if err == nil {
+// 		t.Error("Dig not get an error when we should not have")
+// 	}
+// }
