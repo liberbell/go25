@@ -5,16 +5,18 @@ import (
 	"net/http"
 )
 
+var portNumber = ":8080"
+
 func Home(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "This is the home page.")
 }
 
 func About(w http.ResponseWriter, r *http.Request) {
-	sum, _ := AddValue(2, 2)
+	sum, _ := addValue(2, 2)
 	_, _ = fmt.Fprintf(w, fmt.Sprintf("This is the about page and 2 + 2 is %d", sum))
 }
 
-func AddValue(x, y int) (int, error) {
+func addValue(x, y int) (int, error) {
 	var sum int
 	sum = x + y
 	return sum, nil
@@ -25,5 +27,5 @@ func main() {
 	http.HandleFunc("/", Home)
 	http.HandleFunc("/about", About)
 
-	_ = http.ListenAndServe(":8080", nil)
+	_ = http.ListenAndServe(portNumber, nil)
 }
