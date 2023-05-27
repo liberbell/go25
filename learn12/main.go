@@ -13,13 +13,15 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func About(w http.ResponseWriter, r *http.Request) {
-	sum, _ := addValue(2, 2)
-	_, _ = fmt.Fprintf(w, fmt.Sprintf("This is the about page and 2 + 2 is %d", sum))
+	fmt.Fprintf(w, "This is the about page.")
 }
 
 func Divide(w http.ResponseWriter, r *http.Request) {
-	sum, _ := addValue(2, 2)
-	_, _ = fmt.Fprintf(w, fmt.Sprintf("This is the about page and 2 + 2 is %d", sum))
+	f, err := divideValue(100.0, 10.0)
+	if err != nil {
+		fmt.Fprintf(w, "cannot devide by zero")
+	}
+	fmt.Fprintf(w, fmt.Sprintf("%f diveided %f is %f", x, y, f))
 }
 
 func addValue(x, y int) (int, error) {
