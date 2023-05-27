@@ -10,7 +10,11 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func About(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "This is the home page.")
+	fmt.Fprintf(w, "This is the about page.")
+}
+
+func AddValue(x, y int) int {
+	return x + y
 }
 
 func main() {
