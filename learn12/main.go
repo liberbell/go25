@@ -10,13 +10,14 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func About(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "This is the about page.")
+	sum, _ := AddValue(2, 2)
+	fmt.Fprintf(w, fmt.Sprintf("This is the about page and 2 + 2 is", sum))
 }
 
-func AddValue(x, y int) int {
+func AddValue(x, y int) (int, error) {
 	var sum int
 	sum = x + y
-	return sum
+	return sum, nil
 }
 
 func main() {
