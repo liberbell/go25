@@ -27,6 +27,12 @@ func addValue(x, y int) (int, error) {
 	return sum, nil
 }
 
+func divideValue(x, y float32) (float32, error) {
+
+	result := x / y
+	return result, nil
+}
+
 func main() {
 
 	http.HandleFunc("/", Home)
