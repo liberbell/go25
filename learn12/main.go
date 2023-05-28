@@ -18,11 +18,11 @@ func About(w http.ResponseWriter, r *http.Request) {
 }
 
 func Divide(w http.ResponseWriter, r *http.Request) {
-	f, err := divideValue(100.0, 10.0)
+	f, err := divideValue(100.0, 0.0)
 	if err != nil {
 		fmt.Fprintf(w, "cannot devide by zero")
 	}
-	fmt.Fprintf(w, fmt.Sprintf("%f diveided %f is %f", 100.0, 10.0, f))
+	fmt.Fprintf(w, fmt.Sprintf("%f diveided %f is %f", 100.0, 0.0, f))
 }
 
 func addValue(x, y int) (int, error) {
