@@ -1,3 +1,3 @@
-module github.com/liber/myapp
+module myapp
 
 go 1.19
