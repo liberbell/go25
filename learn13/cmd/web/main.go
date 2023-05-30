@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"net/http"
+
+	"github.com/tsawler/bookings/pkg/handlers"
 )
 
 const portNumber = ":8080"
