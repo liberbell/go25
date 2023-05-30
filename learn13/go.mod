@@ -1,3 +1,3 @@
-module github.com/tsawler/go-course
+module github.com/tsawler/bookings
 
 go 1.19
